@@ -84,7 +84,7 @@ trait MessageResponseTrait
         return $this->response->getStatusCode();
     }
 
-    public function withStatus(int $code, string $reasonPhrase = ''): ResponseInterface
+    public function withStatus(int $code, string $reasonPhrase = '')
     {
         return $this->response->withStatus($code, $reasonPhrase);
     }
